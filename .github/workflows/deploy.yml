@@ -30,6 +30,7 @@ jobs:
               git clone https://github.com/Udhayarasu123/cicdfull
             fi
 
+            cd devops-notes-app
 
             git pull origin main
 
