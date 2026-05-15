@@ -1,4 +1,5 @@
 name: Deploy App
+11
 on:
 push:
 branches:
@@ -18,7 +19,7 @@ key: ${{ secrets.EC2_SSH_KEY }}
 script: |
 cd /home/ubuntu
 if [ ! -d "devops-notes-app" ]; then
-git clone YOUR_REPO_URL
+git clone https://github.com/Udhayarasu123/cicdfull
 fi
 cd devops-notes-app
 git pull origin main
