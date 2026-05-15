@@ -26,11 +26,11 @@ jobs:
           script: |
             cd /home/ubuntu
 
-            if [ ! -d "cicdfull" ]; then
-              git clone https://github.com/Udhayarasu123/cicdfull.git
+            if [ ! -d "devops-notes-app" ]; then
+              git clone YOUR_REPO_URL
             fi
 
-            cd cicdfull
+            cd devops-notes-app
 
             git pull origin main
 
