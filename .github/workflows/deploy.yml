@@ -26,14 +26,14 @@ jobs:
           script: |
             cd /home/ubuntu
 
-            if [ ! -d "devops-notes-app" ]; then
-              git clone https://github.com/Udhayarasu123/cicdfull
+            if [ ! -d "cicdfull" ]; then
+              git clone https://github.com/Udhayarasu123/cicdfull.git
             fi
 
-            cd devops-notes-app
+            cd cicdfull
 
             git pull origin main
 
-            docker compose down
+            docker compose down || true
 
             docker compose up --build -d
